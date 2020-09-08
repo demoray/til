@@ -18,13 +18,16 @@ def main():
                 tags[tag] = []
             tags[tag].append({"path": path, "name": name})
 
-    with open("README.md", "w") as handle:
-        print("# TIL (Today I learned)", file=handle)
-        for tag in sorted(tags.keys()):
-            print("## {}".format(tag), file=handle)
+    content = ['# TIL (Today I learned)']
+    for tag in sorted(tags.keys()):
+            content.append("## {}".format(tag.replace("-", " ")))
             for entry in sorted(tags[tag], key=lambda x: x["name"]):
-                print("* [{}]({})".format(entry["name"], entry["path"]), file=handle)
-            print("", file=handle)
+                content.append("* [{}]({})".format(entry["name"], entry["path"]))
+            content.append("")
+
+
+    with open("README.md", "w") as handle:
+        handle.write("\n".join(content))
 
 
 if __name__ == "__main__":
