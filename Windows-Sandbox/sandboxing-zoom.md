@@ -10,7 +10,7 @@
    <Networking>Enable</Networking>
    <AudioInput>Enable</AudioInput>
    <VideoInput>Enable</VideoInput>
-</Configuration
+</Configuration>
 ```
 5. Using explorer, open the above file.
 6. In the sandbox, open a browser to [https://zoom.us/](https://zoom.us/)
