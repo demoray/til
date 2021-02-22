@@ -7,3 +7,6 @@
 
 ## WSL
 * [Resize disk](WSL/resize-disk.md)
+
+## Windows Sandbox
+* [Sandboxing zoom](Windows-Sandbox/sandboxing-zoom.md)
