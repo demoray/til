@@ -2,6 +2,9 @@
 ## Azure
 * [Hard deleting registrations](Azure/hard-deleting-registrations.md)
 
+## Azure Devops
+* [Matrix variables](Azure-Devops/matrix-variables.md)
+
 ## Azure Functions
 * [Importing private libraries](Azure-Functions/importing-private-libraries.md)
 
